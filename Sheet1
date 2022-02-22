@@ -1,0 +1,220 @@
+package net.jd.account.rbac.module;
+
+public class AppSearchObj {
+	private String appId;
+	private String appTag;
+	private String roleId;
+	private String userId;
+	private Integer pagesize;
+	private Integer pageno;
+	private Double random;
+	public String getAppId() {
+		return appId;
+	}
+	public void setAppId(String appId) {
+		this.appId = appId;
+	}
+	public String getAppTag() {
+		return appTag;
+	}
+	public void setAppTag(String appTag) {
+		this.appTag = appTag;
+	}
+	public Integer getPagesize() {
+		return pagesize;
+	}
+	public void setPagesize(Integer pagesize) {
+		this.pagesize = pagesize;
+	}
+	public Integer getPageno() {
+		return pageno;
+	}
+	public void setPageno(Integer pageno) {
+		this.pageno = pageno;
+	}
+	public Double getRandom() {
+		return random;
+	}
+	public void setRandom(Double random) {
+		this.random = random;
+	}
+	public String getRoleId() {
+		return roleId;
+	}
+	public void setRoleId(String roleId) {
+		this.roleId = roleId;
+	}
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	
+}
+package net.fron.account.rbac.module;
+
+public class EntTree {
+	private String id;
+	private String pId;
+	private String name;
+	private String title;
+	private boolean checked;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getpId() {
+		return pId;
+	}
+	public void setpId(String pId) {
+		this.pId = pId;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public boolean isChecked() {
+		return checked;
+	}
+	public void setChecked(boolean checked) {
+		this.checked = checked;
+	}
+}
+package net.jd.account.rbac.module;
+
+import java.io.Serializable;
+import java.util.Date;
+
+public class RbacApp extends RbacAppKey implements Serializable {
+    private String appName;
+
+    private Date endDate;
+
+    private String appStatus;
+
+    private Date createDate;
+
+    private String createBy;
+
+    private Date updateDate;
+
+    private String updateBy;
+
+    private String resv1;
+
+    private String resv2;
+
+    private String resv3;
+
+    private String resv4;
+
+    private String appSecret;
+
+    private static final long serialVersionUID = 1L;
+
+    public String getAppName() {
+        return appName;
+    }
+
+    public void setAppName(String appName) {
+        this.appName = appName == null ? null : appName.trim();
+    }
+
+    public Date getEndDate() {
+        return endDate;
+    }
+
+    public void setEndDate(Date endDate) {
+        this.endDate = endDate;
+    }
+
+    public String getAppStatus() {
+        return appStatus;
+    }
+
+    public void setAppStatus(String appStatus) {
+        this.appStatus = appStatus == null ? null : appStatus.trim();
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public String getCreateBy() {
+        return createBy;
+    }
+
+    public void setCreateBy(String createBy) {
+        this.createBy = createBy == null ? null : createBy.trim();
+    }
+
+    public Date getUpdateDate() {
+        return updateDate;
+    }
+
+    public void setUpdateDate(Date updateDate) {
+        this.updateDate = updateDate;
+    }
+
+    public String getUpdateBy() {
+        return updateBy;
+    }
+
+    public void setUpdateBy(String updateBy) {
+        this.updateBy = updateBy == null ? null : updateBy.trim();
+    }
+
+    public String getResv1() {
+        return resv1;
+    }
+
+    public void setResv1(String resv1) {
+        this.resv1 = resv1 == null ? null : resv1.trim();
+    }
+
+    public String getResv2() {
+        return resv2;
+    }
+
+    public void setResv2(String resv2) {
+        this.resv2 = resv2 == null ? null : resv2.trim();
+    }
+
+    public String getResv3() {
+        return resv3;
+    }
+
+    public void setResv3(String resv3) {
+        this.resv3 = resv3 == null ? null : resv3.trim();
+    }
+
+    public String getResv4() {
+        return resv4;
+    }
+
+    public void setResv4(String resv4) {
+        this.resv4 = resv4 == null ? null : resv4.trim();
+    }
+
+    public String getAppSecret() {
+        return appSecret;
+    }
+
+    public void setAppSecret(String appSecret) {
+        this.appSecret = appSecret == null ? null : appSecret.trim();
+    }
